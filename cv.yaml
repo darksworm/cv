@@ -1,0 +1,107 @@
+'# yaml-language-server': $schema=https://github.com/rendercv/rendercv/blob/main/schema.json?raw=true
+cv:
+  name: Ilmārs Jānis Blūzmanis
+  location: Copenhagen, Denmark
+  email: ilmarsjb@proton.me
+  phone: +45 91 10 34 46
+  website: null
+  social_networks:
+  - network: LinkedIn
+    username: ilmarsjb
+  sections:
+    Profile:
+    - 'Senior back‑end / DevEx engineer with **a decade** of experience. I make developers faster: lean CI/CD, reliable local environments, secure auth, and pragmatic XP/TDD.'
+    Experience:
+    - company: Penneo A/S
+      position: Senior Back‑End Developer
+      location: Copenhagen, Denmark
+      start_date: 2023-05
+      end_date: present
+      highlights:
+      - '**Identity (Feb 2024 – Present)** — Delivered Qualified Remote Signing (QES/QRS) support (first in Denmark), drove SSO for E2E‑encrypted KYC, expanded authentication flows, and fixed local dev environment issues with custom tooling.'
+      - '**API & Integrations (May 2023 – Feb 2024)** — Shipped OAuth 2.0 auth service enabling integration observability; added distributed session stores for multi‑pod scaling; streamlined dependency upgrades (GitHub, Dependabot, Linear) and tuned fast‑feedback CI/CD.'
+    - company: Edurio
+      position: Senior Back‑End Dev → Engineering Manager → Back‑End Dev
+      location: null
+      start_date: 2019-08
+      end_date: 2023-01
+      highlights:
+      - Practiced XP with TDD; maintained legacy monolith (PHP, Elixir, C#, Python); extracted services to TypeScript microservices on AWS; helped transition to Kubernetes.
+      - 'As Engineering Manager (Aug 2020 – May 2021): led 5 devs + 1 QA; partnered with Product & Customer Success.'
+    - company: Files.fm
+      position: Full‑Stack Developer
+      start_date: 2017-07
+      end_date: 2019-08
+      highlights:
+      - Android app (C#/Xamarin), backup tool (C#/Duplicati), sync tool (C++/Qt), storage backend (PHP5).
+    - company: Next Step Agency
+      position: Programmer
+      start_date: 2016-12
+      end_date: 2017-07
+      highlights:
+      - Browser tennis game (TypeScript/Angular 2), Spring Boot back end, multi‑server architecture.
+    - company: Draugiem.lv
+      position: Junior Programmer
+      start_date: 2016-03
+      end_date: 2016-08
+      highlights:
+      - PHP, vanilla JS; assisted transition to PHP7.
+    - company: Earlier — Self‑employed & Internships
+      position: ''
+      start_date: '2014'
+      end_date: '2015'
+      highlights:
+      - CS:GO stats tools/APIs (PHP), scrapers/APIs, Linux VPS & nginx config; internships at Lattelecom.
+    Developer Experience Strengths:
+    - bullet: '**CI/CD & Automation:** Fast‑feedback pipelines; automated dependency upgrades.'
+    - bullet: '**Environments & Tooling:** Diagnose/fix local dev setups; custom tools to reduce onboarding friction.'
+    - bullet: '**Identity & Security:** OAuth 2.0 services; SSO; Qualified electronic/remote signing (QES/QRS).'
+    - bullet: '**Scalability & Reliability:** Distributed session stores; Kubernetes adoption support.'
+    - bullet: '**Observability:** Telemetry for customer‑built integrations.'
+    - bullet: '**Practices:** XP, TDD, fail‑fast, incremental refactoring.'
+    Skills:
+    - label: Languages/Stacks
+      details: TypeScript/Node.js, PHP, Elixir, C#, Python, Java, C++, Vue.js
+    - label: Cloud/Infra
+      details: AWS services, Kubernetes; Terraform (exposure via migrations)
+    - label: Auth & Crypto
+      details: OAuth 2.0, SSO, QES/QRS
+    - label: DevEx
+      details: CI/CD, developer tooling, distributed session stores, integration observability
+    Education:
+    - institution: Rīgas Tehniskā Koledža
+      area: Programming Technician
+      start_date: '2012'
+      end_date: '2016'
+    Languages:
+    - label: Languages
+      details: Latvian (native), English (excellent), Russian (elementary), Danish (basic)
+    Interests:
+    - label: Interests
+      details: Weightlifting, kayaking, rogaining, Arduino, DIY projects, music, classic literature
+design:
+  theme: classic
+  page:
+    size: a4
+    margins:
+      top: 1.6cm
+      bottom: 1.4cm
+      left: 1.8cm
+      right: 1.8cm
+  colors:
+    text: '#111111'
+    muted_text: '#333333'
+    rule: '#999999'
+locale:
+  phone_number_format: '{0}'
+rendercv_settings:
+  bold_keywords:
+  - CI/CD
+  - OAuth 2.0
+  - SSO
+  - QES
+  - QRS
+  - Kubernetes
+  - TypeScript
+  - Node.js
+  output_path: Ilmars_Janis_Bluzmanis_DevEx_CV.pdf

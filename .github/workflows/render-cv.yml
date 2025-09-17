@@ -1,0 +1,157 @@
+name: Render CV and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'cv.yaml'
+      - '.github/workflows/render-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install RenderCV
+        run: |
+          pip install --upgrade pip
+          pip install "rendercv[full]"
+
+      - name: Render CV
+        run: |
+          rendercv render cv.yaml
+
+      - name: Copy PDF to docs directory
+        run: |
+          mkdir -p docs
+          cp Ilmars_Janis_Bluzmanis_DevEx_CV.pdf docs/cv.pdf
+
+      - name: Create index.html
+        run: |
+          cat > docs/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Ilmars Janis Bluzmanis - CV</title>
+              <style>
+                  body, html {
+                      margin: 0;
+                      padding: 0;
+                      height: 100%;
+                      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                      background: #f0f2f5;
+                  }
+                  .container {
+                      max-width: 900px;
+                      margin: 0 auto;
+                      padding: 20px;
+                      height: 100vh;
+                      display: flex;
+                      flex-direction: column;
+                  }
+                  .header {
+                      text-align: center;
+                      padding: 20px 0;
+                      background: white;
+                      border-radius: 8px;
+                      margin-bottom: 20px;
+                      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                  }
+                  h1 {
+                      margin: 0;
+                      color: #333;
+                      font-size: 28px;
+                  }
+                  .subtitle {
+                      color: #666;
+                      margin-top: 10px;
+                      font-size: 16px;
+                  }
+                  .pdf-container {
+                      flex: 1;
+                      background: white;
+                      border-radius: 8px;
+                      overflow: hidden;
+                      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                  }
+                  iframe {
+                      width: 100%;
+                      height: 100%;
+                      border: none;
+                  }
+                  .download-link {
+                      display: inline-block;
+                      margin-top: 15px;
+                      padding: 10px 20px;
+                      background: #007bff;
+                      color: white;
+                      text-decoration: none;
+                      border-radius: 5px;
+                      font-weight: 500;
+                      transition: background 0.3s;
+                  }
+                  .download-link:hover {
+                      background: #0056b3;
+                  }
+                  @media (max-width: 768px) {
+                      .container {
+                          padding: 10px;
+                      }
+                      h1 {
+                          font-size: 24px;
+                      }
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <div class="header">
+                      <h1>Ilmars Janis Bluzmanis</h1>
+                      <div class="subtitle">Senior Platform Engineer / Developer Experience Engineer</div>
+                      <a href="cv.pdf" download class="download-link">Download CV (PDF)</a>
+                  </div>
+                  <div class="pdf-container">
+                      <iframe src="cv.pdf" title="CV"></iframe>
+                  </div>
+              </div>
+          </body>
+          </html>
+          EOF
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
