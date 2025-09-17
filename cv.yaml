@@ -1,7 +1,7 @@
 cv:
   name: Ilmārs Jānis Blūzmanis
   location: Copenhagen, Denmark
-  email: ilmarsjb@proton.me
+  email: ilmars.janis.bluzmanis@gmail.com
   phone: +45 91 10 34 46
   website: null
   social_networks:
@@ -12,45 +12,106 @@ cv:
     - 'Senior back‑end / DevEx engineer with **a decade** of experience. I make developers faster: lean CI/CD, reliable local environments, secure auth, and pragmatic XP/TDD.'
     Experience:
     - company: Penneo A/S
-      position: Senior Back‑End Developer
+      position: Senior Back‑End Developer - Identity
       location: Copenhagen, Denmark
-      start_date: 2023-05
+      start_date: 2024-02
       end_date: present
       highlights:
-      - '**Identity (Feb 2024 – Present)** — Delivered Qualified Remote Signing (QES/QRS) support (first in Denmark), drove SSO for E2E‑encrypted KYC, expanded authentication flows, and fixed local dev environment issues with custom tooling.'
-      - '**API & Integrations (May 2023 – Feb 2024)** — Shipped OAuth 2.0 auth service enabling integration observability; added distributed session stores for multi‑pod scaling; streamlined dependency upgrades (GitHub, Dependabot, Linear) and tuned fast‑feedback CI/CD.'
+      - Built and deployed a solution for Qualified Remote Signing (QRSS) to help Penneo become the first company in Denmark to support it
+      - Led the development of and shipped to production an SSO login solution for our e2e encrypted KYC product
+      - Implemented new login, identification and authentication methods to the Penneo Sign and KYC products
+      - Fixed numerous issues in the local dev environment setup and built custom tooling, helping new developers get started quicker
+    - company: Penneo A/S
+      position: Senior Back‑End Developer - API & Integrations
+      location: Copenhagen, Denmark
+      start_date: 2023-05
+      end_date: 2024-02
+      highlights:
+      - Shipped an OAuth 2.0 authentication service to production, enabling observability of customer built integrations with Penneo
+      - Added a distributed session store mechanism to two of our node projects, allowing for scaling the services to multiple pods and support more load
+      - Set up an integration between GitHub, Dependabot and Linear to enforce and simplify upgrading dependencies with known vulnerabilities
+      - Designed and built a robust CI/CD pipeline for both of our node projects, with the focus on delivering feedback to developers as quickly as possible (fail fast)
     - company: Edurio
-      position: Senior Back‑End Dev → Engineering Manager → Back‑End Dev
-      location: null
-      start_date: 2019-08
+      position: Senior Back‑End Developer
+      location: Riga, Latvia
+      start_date: 2021-05
       end_date: 2023-01
       highlights:
-      - Practiced XP with TDD; maintained legacy monolith (PHP, Elixir, C#, Python); extracted services to TypeScript microservices on AWS; helped transition to Kubernetes.
-      - 'As Engineering Manager (Aug 2020 – May 2021): led 5 devs + 1 QA; partnered with Product & Customer Success.'
+      - Practicing XP / Agile in a small product team
+      - Participating in product design to bring simpler and better solutions quicker to our users
+      - Maintaining our legacy monolith services (PHP, Elixir, C#, Python)
+      - Extracting our legacy code into microservices (AWS services, TypeScript)
+      - Helping the transition of our legacy services into kubernetes
+      - Writing new code and fixing bugs using TDD
+    - company: Edurio
+      position: Engineering Manager
+      location: Riga, Latvia
+      start_date: 2020-08
+      end_date: 2021-05
+      highlights:
+      - Leading development team of 5 developers and one QA specialist
+      - Working together with Product and Customer Success teams to prioritize work
+      - Facilitating SCRUM processes
+    - company: Edurio
+      position: Back‑End Developer
+      location: Riga, Latvia
+      start_date: 2019-08
+      end_date: 2020-07
+      highlights:
+      - Back-end development with Elixir (Phoenix, Ecto), PHP7 (Laravel), Node.js, Python
+      - Front-end development with Vue.js
+      - Setting up and managing services in AWS
+      - Load testing with JMeter
     - company: Files.fm
-      position: Full‑Stack Developer
+      position: Full Stack Developer
+      location: Riga, Latvia
       start_date: 2017-07
       end_date: 2019-08
       highlights:
-      - Android app (C#/Xamarin), backup tool (C#/Duplicati), sync tool (C++/Qt), storage backend (PHP5).
+      - Android application development with C# (on the Xamarin platform)
+      - File backup tool development with C# (based on the open-source project Duplicati)
+      - File synchronization tool development with C++ (on the QT platform)
+      - Failiem.lv/Files.fm file storage backend development with PHP5
+      - Doing large-scale refactoring and fixing deeply ingrained bugs in a legacy PHP codebase
     - company: Next Step Agency
       position: Programmer
+      location: Riga, Latvia
       start_date: 2016-12
       end_date: 2017-07
       highlights:
-      - Browser tennis game (TypeScript/Angular 2), Spring Boot back end, multi‑server architecture.
+      - Online tennis game ("tennio", now discontinued) development with TypeScript 2.0, Angular 2
+      - Website backend development with Java (on the Spring Boot platform)
+      - Tennis game simulation engine development with Java
+      - Multiple game server architecture development and administration
     - company: Draugiem.lv
       position: Junior Programmer
+      location: Riga, Latvia
       start_date: 2016-03
       end_date: 2016-08
       highlights:
-      - PHP, vanilla JS; assisted transition to PHP7.
-    - company: Earlier — Self‑employed & Internships
-      position: ''
-      start_date: '2014'
-      end_date: '2015'
+      - Improving the latvian social platform "draugiem.lv"
+      - Face-lifting parts of website with the help of a designer
+      - Implementing new features and building small web games using PHP with an in-house framework and vanilla JS
+      - Aiding in transition to PHP7
+    - company: Self-employed
+      position: Programmer
+      location: Latvia
+      start_date: 2016-01
+      end_date: 2016-10
       highlights:
-      - CS:GO stats tools/APIs (PHP), scrapers/APIs, Linux VPS & nginx config; internships at Lattelecom.
+      - Development of CS:GO professional match statistics aggregation and visualization tool for the project "LoungeDestroyer"
+      - Development of CS:GO market price aggregation and API "steam.expert" (discontinued)
+      - Building web scrapers and APIs in PHP
+      - Configuration of linux vps' & nginx webservers
+    - company: Lattelecom
+      position: Intern
+      location: Riga, Latvia
+      start_date: 2014-09
+      end_date: 2015-05
+      highlights:
+      - Manual testing of an in-development website (May 2015)
+      - Manual normalization of technical documentation (May 2015)
+      - Aiding in refactoring of an asp.net project supervised by a senior developer (Sep-Dec 2014)
     Developer Experience Strengths:
     - bullet: '**CI/CD & Automation:** Fast‑feedback pipelines; automated dependency upgrades.'
     - bullet: '**Environments & Tooling:** Diagnose/fix local dev setups; custom tools to reduce onboarding friction.'
@@ -58,18 +119,26 @@ cv:
     - bullet: '**Scalability & Reliability:** Distributed session stores; Kubernetes adoption support.'
     - bullet: '**Observability:** Telemetry for customer‑built integrations.'
     - bullet: '**Practices:** XP, TDD, fail‑fast, incremental refactoring.'
+    Top Skills:
+    - bullet: '**Cryptography:** Qualified Remote Signing (QRSS), Qualified Electronic Signatures (QES)'
+    - bullet: '**Identity & Auth:** OAuth 2.0, SSO, KYC, authentication flows'
+    - bullet: '**Developer Experience:** CI/CD pipelines, local dev environments, custom tooling, dependency management'
     Skills:
     - label: Languages/Stacks
-      details: TypeScript/Node.js, PHP, Elixir, C#, Python, Java, C++, Vue.js
+      details: TypeScript/Node.js, PHP, Elixir, C#, Python, Java, C++, Vue.js, Angular
     - label: Cloud/Infra
-      details: AWS services, Kubernetes; Terraform (exposure via migrations)
+      details: AWS services, Kubernetes, Docker, Linux VPS, nginx
     - label: Auth & Crypto
-      details: OAuth 2.0, SSO, QES/QRS
+      details: OAuth 2.0, SSO, QES/QRSS, KYC, E2E encryption
     - label: DevEx
       details: CI/CD, developer tooling, distributed session stores, integration observability
+    - label: Testing & Quality
+      details: TDD, XP/Agile, JMeter load testing, SCRUM
+    Certifications:
+    - bullet: TypeScript
     Education:
     - institution: Rīgas Tehniskā Koledža
-      area: Programming Technician
+      area: Professional Highschool, Programming
       start_date: '2012'
       end_date: '2016'
     Languages:
@@ -102,7 +171,17 @@ rendercv_settings:
   - OAuth 2.0
   - SSO
   - QES
-  - QRS
+  - QRSS
+  - KYC
+  - TDD
+  - XP
+  - SCRUM
+  - Elixir
+  - Vue.js
+  - Angular
+  - AWS
+  - Docker
+  - JMeter
   - Kubernetes
   - TypeScript
   - Node.js
