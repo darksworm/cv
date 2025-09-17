@@ -18,7 +18,7 @@ cv:
       end_date: present
       highlights:
       - Built and deployed a solution for Qualified Remote Signing (QRSS) to help Penneo become the first company in Denmark to support it
-      - Led the development of and shipped to production an SSO login solution for our e2e encrypted KYC product
+      - Led the development of and shipped to production an SSO login solution for our KYC product
       - Implemented new login, identification and authentication methods to the Penneo Sign and KYC products
       - Fixed numerous issues in the local dev environment setup and built custom tooling, helping new developers get started quicker
     - company: Penneo A/S
@@ -29,7 +29,7 @@ cv:
       highlights:
       - Shipped an OAuth 2.0 authentication service to production, enabling observability of customer built integrations with Penneo
       - Added a distributed session store mechanism to two of our node projects, allowing for scaling the services to multiple pods and support more load
-      - Set up an integration between GitHub, Dependabot and Linear to enforce and simplify upgrading dependencies with known vulnerabilities
+      - Set up dependency vulnerability management processes with GitHub and Dependabot
       - Designed and built a robust CI/CD pipeline for both of our node projects, with the focus on delivering feedback to developers as quickly as possible (fail fast)
     - company: Edurio
       position: Senior Back‑End Developer
@@ -109,11 +109,9 @@ cv:
       start_date: 2014-09
       end_date: 2015-05
       highlights:
-      - Manual testing of an in-development website (May 2015)
-      - Manual normalization of technical documentation (May 2015)
-      - Aiding in refactoring of an asp.net project supervised by a senior developer (Sep-Dec 2014)
+      - Participated in asp.net project refactoring and website testing
     Developer Experience Strengths:
-    - bullet: '**CI/CD & Automation:** Fast‑feedback pipelines; automated dependency upgrades.'
+    - bullet: '**CI/CD & Automation:** Fast‑feedback pipelines; continuous integration and deployment.'
     - bullet: '**Environments & Tooling:** Diagnose/fix local dev setups; custom tools to reduce onboarding friction.'
     - bullet: '**Identity & Security:** OAuth 2.0 services; SSO; Qualified electronic/remote signing (QES/QRS).'
     - bullet: '**Scalability & Reliability:** Distributed session stores; Kubernetes adoption support.'
@@ -122,20 +120,18 @@ cv:
     Top Skills:
     - bullet: '**Cryptography:** Qualified Remote Signing (QRSS), Qualified Electronic Signatures (QES)'
     - bullet: '**Identity & Auth:** OAuth 2.0, SSO, KYC, authentication flows'
-    - bullet: '**Developer Experience:** CI/CD pipelines, local dev environments, custom tooling, dependency management'
+    - bullet: '**Developer Experience:** CI/CD pipelines, local dev environments, custom tooling'
     Skills:
     - label: Languages/Stacks
       details: TypeScript/Node.js, PHP, Elixir, C#, Python, Java, C++, Vue.js, Angular
     - label: Cloud/Infra
       details: AWS services, Kubernetes, Docker, Linux VPS, nginx
     - label: Auth & Crypto
-      details: OAuth 2.0, SSO, QES/QRSS, KYC, E2E encryption
+      details: OAuth 2.0, SSO, QES/QRSS, KYC
     - label: DevEx
       details: CI/CD, developer tooling, distributed session stores, integration observability
     - label: Testing & Quality
       details: TDD, XP/Agile, JMeter load testing, SCRUM
-    Certifications:
-    - bullet: TypeScript
     Education:
     - institution: Rīgas Tehniskā Koledža
       area: Professional Highschool, Programming
