@@ -82,11 +82,21 @@ design:
   theme: classic
   page:
     size: a4
+    top_margin: 1.6cm
+    bottom_margin: 1.4cm
+    left_margin: 1.8cm
+    right_margin: 1.8cm
   colors:
     text: '#111111'
+    name: '#000000'
+    connections: '#444444'
+    section_titles: '#000000'
+    links: '#1e90ff'
 locale:
   phone_number_format: 'national'
 rendercv_settings:
+  render_command:
+    pdf_path: Ilmars_Janis_Bluzmanis_DevEx_CV.pdf
   bold_keywords:
   - CI/CD
   - OAuth 2.0
