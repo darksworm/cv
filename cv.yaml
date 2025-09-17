@@ -1,4 +1,3 @@
-'# yaml-language-server': $schema=https://github.com/rendercv/rendercv/blob/main/schema.json?raw=true
 cv:
   name: Ilmārs Jānis Blūzmanis
   location: Copenhagen, Denmark
@@ -83,17 +82,10 @@ design:
   theme: classic
   page:
     size: a4
-    margins:
-      top: 1.6cm
-      bottom: 1.4cm
-      left: 1.8cm
-      right: 1.8cm
   colors:
     text: '#111111'
-    muted_text: '#333333'
-    rule: '#999999'
 locale:
-  phone_number_format: '{0}'
+  phone_number_format: 'national'
 rendercv_settings:
   bold_keywords:
   - CI/CD
@@ -104,4 +96,3 @@ rendercv_settings:
   - Kubernetes
   - TypeScript
   - Node.js
-  output_path: Ilmars_Janis_Bluzmanis_DevEx_CV.pdf
