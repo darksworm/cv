@@ -1,148 +1,94 @@
 cv:
   name: Ilmārs Jānis Blūzmanis
   location: Copenhagen, Denmark
-  email: ilmars.janis.bluzmanis@gmail.com
+  email: ilmarsjb@proton.me
   phone: +45 91 10 34 46
   website: null
   social_networks:
   - network: LinkedIn
     username: ilmarsjb
+  - network: GitHub
+    username: darksworm
   sections:
     Profile:
-    - 'Senior back‑end / DevEx engineer with **a decade** of experience. I make developers faster: lean CI/CD, reliable local environments, secure auth, and pragmatic XP/TDD.'
+    - 'Senior Full Stack Developer with **a decade** of experience. I make developers faster: lean CI/CD, reliable local environments, secure auth, and pragmatic XP/TDD. Currently interested in AI agents, DevEx, DevOps and IOT devices.'
     Experience:
     - company: Penneo A/S
-      position: Senior Back‑End Developer - Identity
-      location: Copenhagen, Denmark
-      start_date: 2024-02
-      end_date: present
-      highlights:
-      - Built and deployed a solution for Qualified Remote Signing (QRSS) to help Penneo become the first company in Denmark to support it
-      - Led the development of and shipped to production an SSO login solution for our KYC product
-      - Implemented new login, identification and authentication methods to the Penneo Sign and KYC products
-      - Fixed numerous issues in the local dev environment setup and built custom tooling, helping new developers get started quicker
-    - company: Penneo A/S
-      position: Senior Back‑End Developer - API & Integrations
+      position: Senior Back‑End Developer
       location: Copenhagen, Denmark
       start_date: 2023-05
-      end_date: 2024-02
+      end_date: present
       highlights:
-      - Shipped an OAuth 2.0 authentication service to production, enabling observability of customer built integrations with Penneo
-      - Added a distributed session store mechanism to two of our node projects, allowing for scaling the services to multiple pods and support more load
-      - Set up dependency vulnerability management processes with GitHub and Dependabot
-      - Designed and built a robust CI/CD pipeline for both of our node projects, with the focus on delivering feedback to developers as quickly as possible (fail fast)
+      - Spearheaded the completion and production launch of a public OAuth 2.0 authentication API as part of the API & Integrations team.
+      - Designed and built an unified SSO login solution and integrated it in our KYC product.
+      - Built and deployed a solution for Qualified Remote Signing (QRSS) to help Penneo become the first QTSP in Denmark.
+      - Fixed numerous issues in the local dev environment setup and built custom tooling, helping new developers get started quicker.
     - company: Edurio
-      position: Senior Back‑End Developer
-      location: Riga, Latvia
-      start_date: 2021-05
-      end_date: 2023-01
-      highlights:
-      - Practicing XP / Agile in a small product team
-      - Participating in product design to bring simpler and better solutions quicker to our users
-      - Maintaining our legacy monolith services (PHP, Elixir, C#, Python)
-      - Extracting our legacy code into microservices (AWS services, TypeScript)
-      - Helping the transition of our legacy services into kubernetes
-      - Writing new code and fixing bugs using TDD
-    - company: Edurio
-      position: Engineering Manager
-      location: Riga, Latvia
-      start_date: 2020-08
-      end_date: 2021-05
-      highlights:
-      - Leading development team of 5 developers and one QA specialist
-      - Working together with Product and Customer Success teams to prioritize work
-      - Facilitating SCRUM processes
-    - company: Edurio
-      position: Back‑End Developer
+      position: Senior Back‑End Developer / Engineering Manager
       location: Riga, Latvia
       start_date: 2019-08
-      end_date: 2020-07
+      end_date: 2023-01
       highlights:
-      - Back-end development with Elixir (Phoenix, Ecto), PHP7 (Laravel), Node.js, Python
-      - Front-end development with Vue.js
-      - Setting up and managing services in AWS
-      - Load testing with JMeter
+      - Played a crucial role in product discovery, working together with our Product Managers and other developers using event storming.
+      - Using TDD and Pair Programming, we fixed many critical bugs and revamped large sections of the product previously considered beyond repair.
+      - Built out the entire CI/CD pipeline for all of our services, to take the process from fully manual to fully automated deployments to all environments.
+      - Turned years of manual infrastructure set up into quickly redeployable terraform code.
+      - Led efforts to scale our services, successfully increasing capacity from just 100 concurrent users to thousands.
+      - Analyzed and grouped incoming support tickets to identify and solve core issues in the product, removing the need for an on-call developer rotation.
     - company: Files.fm
       position: Full Stack Developer
       location: Riga, Latvia
       start_date: 2017-07
       end_date: 2019-08
       highlights:
-      - Android application development with C# (on the Xamarin platform)
-      - File backup tool development with C# (based on the open-source project Duplicati)
-      - File synchronization tool development with C++ (on the QT platform)
-      - Failiem.lv/Files.fm file storage backend development with PHP5
-      - Doing large-scale refactoring and fixing deeply ingrained bugs in a legacy PHP codebase
-    - company: Next Step Agency
+      - Maintained two white labeled open source desktop applications - a file synchronization tool, and a file backup tool. I implemented auto updating and set up pipelines to automatically compile them for windows, mac and linux.
+      - Contributed to the file storage backend and website, building new features and undertaking extensive refactoring to ensure that common actions performed on the platform are not using many different implementations.
+      - Integrated database transactions to improve logic consistency and significantly reduce the incidence of unpredictable errors, boosting overall application reliability.
+    - company: Self-employed
       position: Programmer
-      location: Riga, Latvia
-      start_date: 2016-12
+      location: Latvia
+      start_date: 2016-09
       end_date: 2017-07
       highlights:
-      - Online tennis game ("tennio", now discontinued) development with TypeScript 2.0, Angular 2
-      - Website backend development with Java (on the Spring Boot platform)
-      - Tennis game simulation engine development with Java
-      - Multiple game server architecture development and administration
+      - Built a backend to aggregate professional esports team match-up statistics and then visualize them in the formerly popular browser extension "LoungeDestroyer".
+      - Built web scrapers to load data from publicly available websites, utilizing proxies to avoid rate limits and beating anti-scraping measures in other imaginative ways.
+      - Configured and maintained linux vps' and nginx web servers hosting PHP websites.
     - company: Draugiem.lv
-      position: Junior Programmer
+      position: Junior Developer
       location: Riga, Latvia
       start_date: 2016-03
       end_date: 2016-08
       highlights:
-      - Improving the latvian social platform "draugiem.lv"
-      - Face-lifting parts of website with the help of a designer
-      - Implementing new features and building small web games using PHP with an in-house framework and vanilla JS
-      - Aiding in transition to PHP7
-    - company: Self-employed
-      position: Programmer
-      location: Latvia
-      start_date: 2016-01
-      end_date: 2016-10
-      highlights:
-      - Development of CS:GO professional match statistics aggregation and visualization tool for the project "LoungeDestroyer"
-      - Development of CS:GO market price aggregation and API "steam.expert" (discontinued)
-      - Building web scrapers and APIs in PHP
-      - Configuration of linux vps' & nginx webservers
-    - company: Lattelecom
-      position: Intern
-      location: Riga, Latvia
-      start_date: 2014-09
-      end_date: 2015-05
-      highlights:
-      - Participated in asp.net project refactoring and website testing
-    Developer Experience Strengths:
-    - bullet: '**CI/CD & Automation:** Fast‑feedback pipelines; continuous integration and deployment.'
-    - bullet: '**Environments & Tooling:** Diagnose/fix local dev setups; custom tools to reduce onboarding friction.'
-    - bullet: '**Identity & Security:** OAuth 2.0 services; SSO; Qualified electronic/remote signing (QES/QRS).'
-    - bullet: '**Scalability & Reliability:** Distributed session stores; Kubernetes adoption support.'
-    - bullet: '**Observability:** Telemetry for customer‑built integrations.'
-    - bullet: '**Practices:** XP, TDD, fail‑fast, incremental refactoring.'
-    Top Skills:
-    - bullet: '**Cryptography:** Qualified Remote Signing (QRSS), Qualified Electronic Signatures (QES)'
-    - bullet: '**Identity & Auth:** OAuth 2.0, SSO, KYC, authentication flows'
-    - bullet: '**Developer Experience:** CI/CD pipelines, local dev environments, custom tooling'
+      - Built new features, advertisements and games into the social network draugiem.lv.
+      - Facelifted the popular "today" section of the website with the help of a designer.
+      - Implemented video upload and playback feature with the help of a senior developer.
+    Selected Open-Source Projects:
+    - label: Argonaut (Go)
+      details: a keyboard-first TUI that lets platform teams browse ArgoCD apps, live-stream resource status, diff, sync, and roll back without leaving the terminal. Shipped 40+ tagged releases; packaged for most modern systems.
+    - label: Go WOL Proxy (Go)
+      details: Reverse-proxy that wakes sleeping services on demand and shuts them down after inactivity (SSH/HTTP), reducing idle power usage.
+    - label: traefiktop (Rust)
+      details: Fast, keyboard-friendly TUI to inspect Traefik routers/services; highlights down paths and failovers.
     Skills:
-    - label: Languages/Stacks
-      details: TypeScript/Node.js, PHP, Elixir, C#, Python, Java, C++, Vue.js, Angular
-    - label: Cloud/Infra
-      details: AWS services, Kubernetes, Docker, Linux VPS, nginx
-    - label: Auth & Crypto
-      details: OAuth 2.0, SSO, QES/QRSS, KYC
-    - label: DevEx
-      details: CI/CD, developer tooling, distributed session stores, integration observability
-    - label: Testing & Quality
-      details: TDD, XP/Agile, JMeter load testing, SCRUM
-    Education:
-    - institution: Rīgas Tehniskā Koledža
-      area: Professional Highschool, Programming
-      start_date: '2012'
-      end_date: '2016'
-    Languages:
+    - label: Languages
+      details: TypeScript, NodeJS, PHP, SQL, Python, C#, Java, C++, Elixir, Kotlin
+    - label: Frameworks
+      details: Vue, React, Angular, Laravel, Symfony, Express, Fastify, Phoenix
+    - label: Testing tools
+      details: Selenium, Cypress, Playwright, Jest, Mocha, Sinon, PHPUnit, JMeter, k6
+    - label: Methodologies
+      details: Agile, TDD, XP, Pair Programming, Event storming
+    - label: Cloud technologies
+      details: AWS, Terraform, Kubernetes, GitHub actions
+    - label: Obsevability
+      details: Grafana, Loki, Tempo, OpenTelemetry - traces, metrics, logs.
     - label: Languages
       details: Latvian (native), English (excellent), Russian (elementary), Danish (basic)
-    Interests:
-    - label: Interests
-      details: Weightlifting, kayaking, rogaining, Arduino, DIY projects, music, classic literature
+    Education:
+    - institution: Rigas Tehniska Koledza
+      area: Programming technician
+      start_date: '2012'
+      end_date: '2016'
 design:
   theme: classic
   page:
@@ -171,13 +117,9 @@ rendercv_settings:
   - KYC
   - TDD
   - XP
-  - SCRUM
-  - Elixir
   - Vue.js
   - Angular
   - AWS
-  - Docker
-  - JMeter
   - Kubernetes
   - TypeScript
   - Node.js
